@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000;
+    color: white;
+}
+
+.header {
+    background-color: black;
+    height: 80%;
+    overflow: hidden;
+}
+
+.main {  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 20px;
+    font-size: 18px;
+    list-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: yellow;
+    border-radius: 25px;
+    padding: 10px 20px;
+}
+
+.navbar ul li a:hover {
+    color: yellow;
+    border-bottom: 5px solid;
+    transition: ease-in 0.1s 0.2s;
+}
+
+.left-text {
+    text-align: left;
+    margin: 20px;
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+.img {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.img img {
+    height: auto;
+    width: 90%;
+    max-width: 400px;
+}
+
+.Hello-text {
+    color: yellow;
+}
+
+.name {
+    color: red;
+}
+
+section {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+section.projects {
+    min-height: 550px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: yellow; /* Ensured heading color is visible */
+}
+
+.project-image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items */
+}
+.project-image .pro img {
+    width: 600px; /* Fixed width */
+    height: 250px; /* Fixed height */
+    margin: 5px; /* Space between images */
+}
+.pro {
+    margin: 10px; 
+    text-align: center;
+    transition: transform 0.3s; /* Add transition for smooth hover effect */
+    cursor: pointer;
+}
+
+.pro img {
+    height: auto;
+    width: 100%;
+    max-width: 400px; /* Increased max width for larger project images */
+    border: 4px solid; /* Reduced border */
+    box-shadow: 5px 5px 5px #727272; /* Reduced shadow */
+}
+
+.pro:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+}
+
+.project-title {
+    margin-top: 10px;
+    color: yellow; /* Changed color for visibility */
+    font-size: 20px; 
+}
+
+.services {
+    border: none; /* Reduced border */
+}
+
+.services .heading {
+    color: yellow;
+    font-size: 36px;
+    text-align: center;
+}
+
+.all-services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.all-services .image-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for larger screens */
+    justify-content: center; /* Center items */
+}
+
+.all-services .image-grid img {
+    border: 4px solid black; /* Reduced border */
+    border-radius: 15px;
+    transition: transform 0.3s; /* Add transition for smooth hover effect */
+    cursor: pointer;
+    width: 400px; /* Fixed width */
+    height: 250px; /* Fixed height */
+    margin: 5px; /* Space between images */
+}
+
+.all-services .image-grid img:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+}
+
+.all-services p {
+    color: white;
+    text-align: center;
+}
+
+.aboutme-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.right-text {
+    flex: 1;
+}
+
+.left-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.left-image img {
+    width: 90%;
+    max-width: 300px;
+}
+
+.contact-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.left-text {
+    flex: 1;
+}
+
+.right-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.right-img img {
+    width: 90%;
+    max-width: 300px;
+}
+
+.input-box, .message {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #333; /* Dark background for input fields */
+    color: white; /* White text for input fields */
+    border: 2px solid yellow; /* Yellow border for visibility */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.send {
+    padding: 10px 20px;
+    background-color: yellow; /* Changed background color for visibility */
+    color: black; /* Changed text color for contrast */
+    border: 2px solid yellow; /* Yellow border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+@media (max-width: 768px) {
+    .navbar ul li {
+        margin: 10px;
+    }
+    
+    .heading {
+        font-size: 24px;
+    }
+    
+    .img img {
+        width: 50%;
+        max-width: none;
+    }
+    
+    .left-text {
+        font-size: 20px;
+    }
+    
+    .right-text {
+        font-size: 18px;
+    }
+    
+    .myname {
+        font-size: 24px;
+    }
+    
+    .all-services {
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row on smaller screens */
+    }
+    
+    .all-services {
+        grid-template-columns: 1fr; /* 1 item per row on very small screens */
+    }
+}
